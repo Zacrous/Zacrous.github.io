@@ -30,6 +30,7 @@
         /*动画*//*美化*/
         @keyframes card {0% {width: 12vh}50% {width: 12vh}100% {width: 60vw}}
         @keyframes op {0% {opacity: 0;}66%{opacity: 0;}100% {opacity: 1;}}
+        @keyframes bright {0% {filter: brightness(0);}100% {filter: brightness(1);}}
         @keyframes btm {0% {background-color: transparent;color: white;}100% {background-color: white;color: black;}}
         /*适应*//*响应*/
         @media screen and (max-width:466px) {#card{width: 280px;}@keyframes card {0% {width: 12vh}50% {width: 12vh}100% {width: 280px}}.social-icon {margin: 4px;}   }
@@ -38,7 +39,7 @@
     <!--本主页系本人写的第一个网页 技术欠佳 见谅 求别盗-->
 </head>
 <body style="margin: 0;width: 100%;height: 100%;position: absolute">
-    <div id="background" style="background: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/zhuye.webp); position: fixed; z-index: -999; width: 100%; height: 100%; background-position: center; background-size: cover"> </div>
+    <div id="background" style="background: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/zhuye.webp); position: fixed; z-index: -999; width: 100%; height: 100%; background-position: center; background-size: cover;animation-name: bright;animation-duration: 2s;"> </div>
     <div id="card">
         <svg style="height: 100%;width:auto;position:absolute;top:0" viewBox ="0 0 15 160 "><path d="m10 0 a10 10 0 0 0 -10 10 v140 a10 10 0 0 0 10 10 v-70 c0 -10 5 -10 5 -20 v-70 Z" fill="white"/></svg>
         <div id="left"> 
