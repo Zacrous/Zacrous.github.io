@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Zacrous/Zacrous.github.io/img/tubiao.webp" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link href="//at.alicdn.com/t/font_2315572_caqdnjpe8dn.css" rel="stylesheet">
+    <style type="text/css">
+        /*类*/
+        .social-icon {margin: calc(2.5vw - 1vh);}
+        .msg {color: rgb(255, 255, 255);font-family: 'ZCOOL KuaiLe';text-align: center;text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);}
+        .btm {margin: auto;display: block;width: 14vh;height: 5vh;border-radius: 5vh;background-color: transparent;border: 0.5vh solid white;font-size: 3vh;line-height: 5vh;}
+        .btm:hover {background-color: white;color: black;animation-name: btm;animation-duration: 0.5s;}
+        /*ID*/
+        /*框架*//*响应*/
+        #card {position: relative;margin: auto;width: 50vw;height: 70vh;top: 15vh;animation-name: card;animation-duration: 1s;backdrop-filter: blur(8px);border-radius: 5vh;box-shadow: 0px 0px 60px #000000}
+        #left {animation-name: op;animation-duration: 1.5s;position: relative;width: 60%;height: 100%;margin: auto;}
+        /*文本*//*内容*/
+        #message {position: relative;margin: auto;top:15vh;width: 100%;height: 8vh;}
+        /*图片*//*内容*/
+        #img {position: relative;margin: auto;top:15vh;width: 25vh;height: 25vh;border-radius: 25vh;background-image: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/touxiang.webp);background-size: cover;box-shadow: 0px 0px 10px black;}
+        /*按钮*//*交互*/
+        #btm_box {position: relative;height: 6vh;top: 20vh;text-align: center;}
+        #social {position: relative;height: 10vh;top:22vh;text-align: center;}
+        /*标签*//*美化*/
+        a {text-decoration: none;color: white;}
+        h1 {margin-top: 1vh;font-size: 4vh;margin-bottom: 1vh;}
+        /*动画*//*美化*/
+        @keyframes card {0% {width: 12vh}50% {width: 12vh}100% {width: 50vw}}
+        @keyframes op {0% {opacity: 0;}66%{opacity: 0;}100% {opacity: 1;}}
+        @keyframes bright {0% {filter: brightness(0);}100% {filter: brightness(1);}}
+        @keyframes btm {0% {background-color: transparent;color: white;}100% {background-color: white;color: black;}}
+        /*适应*//*响应*/
+        @media screen and (max-width:90vh) and (min-width:50vh) {#card{width: 45vh;}@keyframes card {0% {width: 12vh}50% {width: 12vh}100% {width: 45vh}}}
+        @media screen and (min-width:200vh) {#card{max-width: 100vh;}.social-icon {margin: 4vh;}}
+        @media screen and (max-width:50vh) {#card{width:90vw;max-height: 140vw;top:calc(50vh - 70vw)}#message {top:28vw;height: 15vw;}#img {top:28vw;width: 50vw;height: 50vw;}#btm_box {height: 12vw;top: 36vw;}#social {height: 18vw;top:40vw;}@keyframes card {0% {width: 12vh}50% {width: 12vh}100% {width: 90vw}}}
+    </style>
+    <title>Zacrous主页</title>
+    <!--本主页系本人写的第一个网页 技术欠佳 见谅 求别盗-->
+</head>
+<body style="margin: 0;width: 100%;height: 100%;position: absolute">
+    <div id="background" style="background: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/bbg.webp); position: fixed; z-index: -999; width: 100%; height: 100%; background-position: center; background-size: cover;animation-name: bright;animation-duration: 2s;"> </div>
+    <div id="card">
+        <svg style="height: 100%;width:auto;position:absolute;top:0" viewBox ="0 0 15 160 "><path d="m10 0 a10 10 0 0 0 -10 10 v140 a10 10 0 0 0 10 10 v-70 c0 -10 5 -10 5 -20 v-70 Z" fill="white"/></svg>
+        <div id="left"> 
+            <div id="img"></div>
+            <div id="message"><h1 class="msg">Zacrous</h1><p class="msg" style="font-size: 2vh;">与其互为人间 不如自成宇宙</p></div>
+            <div id="btm_box">
+                <a href="https://blog.zacrous.top"><div class="btm msg">博客</div></a>
+            </div>
+            <div id="social"><a class="social-icon" href="https://github.com/Zacrous" target="_blank" title="Github"><i class="iconfont icon-github" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="http://1271470655.qzone.qq.com" target="_blank" title="QQzone"><i class="iconfont icon-qqzone" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="https://space.bilibili.com/419097469" target="_blank" title="Bilibili"><i class="iconfont icon-bilibili" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="https://y.music.163.com/m/user?id=1716005727" target="_blank" title="Cloudmusic"><i class="iconfont icon-cloudmusic" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="https://twitter.com/QAQ03896310?s=09" target="_blank" title="Twitter"><i class="iconfont icon-twitter" style="font-size: 2.5vh !important"></i></a></div>
+        </div>
+        <svg style="height: 100%;width:auto;position:absolute;top:0;right:0" viewBox ="0 0 15 160 "><path d="m5 0 a10 10 0 0 1 10 10 v140 a10 10 0 0 1 -10 10 h -5 v-70 c0 -10 5 -10 5 -20 v-70 Z" fill="white"/></svg>
+    </div>
+    <div id="copyright" style="position: absolute;width: 100%;height: 5vh;top: 89vh;"><p class="msg" style="font-size: 2.5vh;">©2021 By Zacrous</p></div>
+</body>
+</html>
