@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Zacrous/Zacrous.github.io/zacrous.ico" sizes="32x32">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Zacrous/img/img/logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <link href="//at.alicdn.com/t/font_2315572_caqdnjpe8dn.css" rel="stylesheet">
     <style type="text/css">
         /*类*/
-        .social-icon {margin: calc(2.8vw - 0.8vh);}
+        .social-icon {margin: calc(2.5vw - 0.5vh);line-height: 6vh;}
         .msg {color: rgb(255, 255, 255);font-family: 'ZCOOL KuaiLe';text-align: center;text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);}
         .btm {transition: all 0.5s;margin: auto;display: block;width: 14vh;height: 5vh;border-radius: 5vh;background-color: transparent;border: 0.5vh solid white;font-size: 3vh;line-height: 5vh;}
         .btm:hover {background-color: white;color: black;}
         /*ID*/
         /*框架*//*响应*/
-        #card {z-index: 100;transition: all 2s;position: relative;margin: auto;width: 12vh;height: 70vh;top: 15vh;backdrop-filter: blur(8px);border-radius: 5vh;box-shadow: 0px 0px 60px #000000}
-        #card:hover {pointer-events: all;width: 50vw;height: 70vh;}
-        #card div a{pointer-events: none;}
+        #card {z-index: 100;transition: all 2s;transition-delay: 1s;position: relative;margin: auto;width: 12vh;height: 70vh;top: 15vh;backdrop-filter: blur(8px);border-radius: 5vh;box-shadow: 0px 0px 60px #000000}
+        #card:hover {pointer-events: all;width: 50vw;height: 70vh;transition: all 2s;}
         #cardmsg {position: relative;height: 100%;width: 100%;opacity: 0;transition: all 0.5s;}
-        #cardmsg:hover {opacity: 1;transition: all 1s;transition-delay: 1s;}
+        #cardmsg:hover {opacity: 1;transition: all 1s;transition-delay: 2s;}
         /*文本*//*内容*/
         #message {position: relative;margin: auto;top:15vh;width: 100%;height: 8vh;}
         /*图片*//*内容*/
-        #background {animation-name: background;animation-duration: 2s;filter: brightness(1);transition: all 2s;background: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/bbg.webp); position: fixed; z-index: -999; width: 100%; height: 100%; background-position: center; background-size: cover;}
+        #background {animation-name: background;animation-duration: 2s;filter: brightness(1);background: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/bbg.webp); position: fixed; z-index: -999; width: 100%; height: 100%; background-position: center; background-size: cover;}
         @keyframes background {0%{filter: brightness(0)}100%{filter: brightness(1)}}
-        #img {position: relative;margin: auto;top:15vh;width: 25vh;height: 25vh;border-radius: 25vh;background-image: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/touxiang.webp);background-size: cover;box-shadow: 0px 0px 10px black;}
+        #img {position: relative;margin: auto;top:15vh;width: 21vh;height: 21vh;border-radius: 21vh;background-image: url(https://cdn.jsdelivr.net/gh/Zacrous/img/img/touxiang.webp);background-size: cover;box-shadow: 0px 0px 10px black;}
         /*按钮*//*交互*/
-        #btm_box {position: relative;height: 6vh;top: 20vh;text-align: center;}
-        #social {position: relative;height: 10vh;top:22vh;text-align: center;}
+        #btm_box {position: relative;height: 6vh;top: 17.5vh;text-align: center;}
+        #social {position: relative;height: 6vh;width:60%;top:20vh;text-align: center;margin: auto;border-radius: 5vh;box-shadow: 0px 0px 60px #000000;}
         /*标签*//*美化*/
         a {text-decoration: none;color: white;}
         h1 {margin-top: 1vh;font-size: 4vh;margin-bottom: 1vh;}
@@ -49,7 +48,7 @@
             <div id="img"></div>
             <div id="message"><h1 class="msg">Zacrous</h1><p class="msg" style="font-size: 2vh;">与其互为人间 不如自成宇宙</p></div>
             <div id="btm_box">
-                <a href="http://blog.zacrous.top"><div class="btm msg">博客</div></a>
+                <a href="https://blog.zacrous.top"><div class="btm msg">博客</div></a>
             </div>
             <div id="social"><a class="social-icon" href="https://github.com/Zacrous" target="_blank" title="Github"><i class="iconfont icon-github" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="http://1271470655.qzone.qq.com" target="_blank" title="QQzone"><i class="iconfont icon-qqzone" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="https://space.bilibili.com/419097469" target="_blank" title="Bilibili"><i class="iconfont icon-bilibili" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="https://y.music.163.com/m/user?id=1716005727" target="_blank" title="Cloudmusic"><i class="iconfont icon-cloudmusic" style="font-size: 2.5vh !important"></i></a><a class="social-icon" href="https://twitter.com/QAQ03896310?s=09" target="_blank" title="Twitter"><i class="iconfont icon-twitter" style="font-size: 2.5vh !important"></i></a></div>
         </div> 
